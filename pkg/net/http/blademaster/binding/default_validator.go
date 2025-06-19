@@ -52,7 +52,7 @@ func (v *defaultValidator) lazyinit() {
 		enT := en.New()
 
 		uni := ut.New(enT, zhT)
-		v.trans, _ = uni.GetTranslator("zh")
+		v.trans, _ = uni.GetTranslator("en")
 		_ = zhTranslations.RegisterDefaultTranslations(v.validate, v.trans)
 	})
 }
